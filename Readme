@@ -1,0 +1,77 @@
+# Projekt-Programowanie-Obiektowe
+
+Aplikacja do zarządzania przychodnią lekarską
+💭
+Jesteś programistą w zespole pracującym w nowo powstałym projekcie. Twój klient to znany dostawca usług medycznych. Podczas pierwszego dnia pracy dowiedziałeś się, że zadaniem waszego zespołu będzie implementacja wersji demo dla nowego systemu informatycznego wspierającego pracę pracowników recepcji placówek medycznych.
+
+
+Twoim zadaniem jest: przygotowanie, przetestowanie oraz prezentacja działającej aplikacji implementującej wyspecyfikowane przez klienta wymagania.
+
+Wymagania
+⭐ Pacjenci
+✅
+(1.1) Jako recepcjonista chcę mieć możliwość utworzenia profilu nowego pacjenta zawierającego jego dane osobowe oraz kontaktowe potrzebne do świadczenia usług medycznych.
+
+✅
+(1.2) Jako recepcjonista chcę mieć możliwość znalezienia pacjenta po numerze PESEL oraz wyświetlenia wszystkich jego danych.
+✅
+(1.3) Jako recepcjonista chcę móc wyszukać wszystkich pasujących pacjentów o podanym nazwisku oraz wyświetlenia wszystkich danych znalezionych pacjentów.
+⚠️
+Nie zapomnij zaimplementować testów jednostkowych!
+Dane pacjentów potrzebne do świadczenia usług medycznych to:
+
+imię, 
+nazwisko, 
+nr PESEL, 
+data urodzenia,
+wiek,
+telefon kontaktowy, 
+adres mailowy.
+
+
+⭐ Personel medyczny
+✅
+(2.1) Jako pracownik działu HR chcę mieć możliwość utworzenia profilu zatrudnionego lekarza uwzględniając wszystkie jego specjalizacje.
+✅
+(2.2) Jako pracownik działu HR chcę mieć możliwość dodania nowej specjalizacji lekarzowi, który istnieje już w systemie.
+✅
+(2.3) Jako recepcjonista chcę mieć możliwość znalezienia lekarza po jego numerze ID oraz wyświetlenia jego danych oraz specjalizacji.
+✅
+(2.4) Jako recepcjonista chcę mieć możliwość znalezienia wszystkich lekarzy o określonej specjalizacji oraz wyświetlenia ich danych oraz ID.
+⚠️
+Nie zapomnij zaimplementować testów jednostkowych!
+Dane lekarzy wymagane na potrzeby pracy placówki medycznej to:
+
+wszystkie dane osobowe i kontaktowe (tak samo jak u pacjentów),
+ID (może mieć dowolną formę),
+wszystkie posiadane specjalizacje (np. kardiolog, ortopeda, stomatolog).
+
+
+⭐ Dokumentacja
+✅
+(3.1) Jako architekt oprogramowania chcę mieć dostęp do prostej dokumentacji aplikacji zawierającą diagram klas. Diagram powinien zawierać informacje: o wszystkich klasach użytych w projekcie, ich polach oraz zależnościach między klasami.
+Do przygotowania dokumentacji nie musisz korzystać ze specjalistycznych narzędzi. Wystarczy prosty edytor np. Excalidraw.
+
+Excalidraw — Collaborative whiteboarding made easy
+Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.
+https://excalidraw.com/
+
+⭐⭐ Grafik lekarzy
+✅
+(4.1) Jako kierownik placówki chcę mieć możliwość tworzenia grafików dla wszystkich pracujących lekarzy. Pojedynczy grafik powinien zawierać godziny pracy wybranego lekarza w wybranym dniu.
+✅
+(4.2) Jako pracownik recepcji chcę móc pobrać wszystkie utworzone grafiki wybranego lekarza na najbliższy tydzień, abym mógł sprawdzić w jakich godzinach przyjmuje pacjentów.
+⚠️
+Nie zapomnij zaimplementować testów jednostkowych!
+
+⭐⭐⭐ Wizyty lekarskie
+✅
+(5.1) Jako pracownik recepcji chcę mieć możliwość umówienia pacjenta w wybranym dniu o określonej porze na wizytę lekarską z wybranym lekarzem. 
+Domyślna długość wizyty lekarskiej w placówce medycznej to 15 min. Dla uproszczenie można przyjąć, że pacjenci przyjmowani są co kwadrans o godzinach XX:00, XX:15, XX:30, XX:45.
+
+✅
+(5.2) Wizyta lekarska powinna zostać pomyślnie umówiona tylko i wyłącznie w godzinach pracy wybranego lekarza (na podstawie jego grafiku). W przeciwnym wypadku powinien zostać wyrzucony wyjątek, a wizyta nie powinna zostać utworzona.
+✅
+(5.3) Ponadto wizyta powinna być pomyślnie umówiona tylko wtedy, gdy w tym samym czasie wybrany lekarz nie ma już innej wizyty. W przeciwnym wypadku powinien zostać wyrzucony wyjątek, a wizyta nie powinna zostać utworzona.
+⚠️
+Nie zapomnij zaimplementować testów jednostkowych!
